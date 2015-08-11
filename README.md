@@ -1,6 +1,6 @@
 # ThunderBatch
 
-Request middleware that batches together identical requests to get around the thundering herd problem.
+Request middleware that batches together identical requests to get around the thundering herd problem. It uses Redis, so should work for all processes/servers in a cluster that uses the same Redis master.
 
 ## How it works
 
