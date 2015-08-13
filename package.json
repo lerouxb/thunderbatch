@@ -4,7 +4,7 @@
   "description": "Request middleware that batches together identical requests to get around the thundering herd problem.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test --timeout 10000"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,10 @@
     "bluebird": "^2.9.34",
     "debug": "^2.2.0",
     "redis": "^0.12.1"
+  },
+  "devDependencies": {
+    "async": "^1.4.2",
+    "mocha": "^2.2.5",
+    "sinon": "^1.15.4"
   }
 }
